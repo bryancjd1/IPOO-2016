@@ -10,7 +10,7 @@ int getop(char []);
 void push(double);
 double pop(void);
 
-int main(void)
+int main()
 {
     int type, a, b;
     double op2;
@@ -36,7 +36,7 @@ int main(void)
             if (op2 != 0.0)
                 push(pop() / op2);
             else
-                printf("error: zero divisor\n");
+                printf("error: division por cero\n");
             break;
         case '%':
             a = pop();
@@ -44,13 +44,13 @@ int main(void)
             if (a != 0.0)
                 push(b % a);
             else
-                printf("error: zero divisor\n");
+                printf("error: division por cero\n");
             break;
         case '\n':
             printf("= %g\n", pop());
             break;
         default:
-            printf("error: unknown command %s\n", s);
+            printf("error: ingrese numeros %s\n", s);
         break;
         }
     }
@@ -68,7 +68,7 @@ void push(double f)
     if (sp < MAXVAL)
         val[sp++] = f;
     else
-        printf("error: stack full, can't push %g\n", f);
+        printf("error: pila llena %g\n", f);
 }
 
 
@@ -77,7 +77,7 @@ double pop(void)
     if (sp > 0)
         return val[--sp];
     else {
-        printf("error: stack empty\n");
+        printf("error: pila vacia\n");
         return 0.0;
     }
 }
@@ -130,7 +130,7 @@ int getch(void)
 void ungetch(int c)
 {
     if (bufp >= BUFSIZE)
-        printf("ungetch: too many characters\n");
+        printf("ungetch: muchos caracteres\n");
     else
         buf[bufp++] = c;
 }
