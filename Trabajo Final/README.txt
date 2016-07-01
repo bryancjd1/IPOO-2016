@@ -1,3 +1,18 @@
+*** TRABAJO FINAL ***
+
+El juego consiste en completar los diferentes niveles
+que se presentan, siendo un personaje el que tiene
+que pasar esquivando y sobreviviendo los ataques de los
+enemigos, el personaje posee tres vidas, si el personaje
+muere mas de 2 veces entonces la aplicacion terminara,
+los enemigos son estaticos en el mapa, disparan ataques
+constantemente y no pueden ser eliminados, el personaje 
+tiene que completar los 3 mapas que se presentan, al 
+completar el primero nos lleva al segundo que contiene
+una estructura diferente y tambien diferentes posiciones
+de los enemigos, el juego concluye al llegar al punto 
+final del tercer mapa o al morir tres veces.
+
 ***  GUIA PARA USAR ALLEGRO EN CODEBLOCKS  ***
 
 En el programa utilizamos la version o edición 4 de
